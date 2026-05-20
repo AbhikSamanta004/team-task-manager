@@ -90,35 +90,8 @@ Start frontend:
 ```bash
 npm run dev
 ```
-
-Visit `http://localhost:5173` to use the app locally.
-
-## Deployment Instructions
-
-### Backend Deployment (Render)
-1. Push this repository to GitHub.
-2. Create a new web service on Render.
-3. Set the root directory to `backend`.
-4. Build command: `npm install`
-5. Start command: `node server.js`
-6. Add environment variables: `MONGO_URI`, `JWT_SECRET`.
-
-### Frontend Deployment (Vercel)
-1. Create a new Vercel project from GitHub.
-2. Set the root directory to `frontend`.
-3. Vercel will detect Vite automatically.
-4. Add environment variable: `VITE_API_URL=https://team-task-manager-kjbe.onrender.com/api`
-5. Deploy.
-
 ## Notes
 - Admins are automatically assigned when they create a project.
 - Members can only view the projects they belong to and update tasks assigned to them.
 - Dashboard stats are personalized for the logged-in user.
 
-## Submission Checklist
-- Live frontend URL: `https://team-task-manager-lemon-mu.vercel.app/login`
-- Live backend API URL: `https://team-task-manager-kjbe.onrender.com/api`
-- Working frontend and backend connection
-- Environment variables managed through `.env` and Vercel/Render settings
-- README with setup and deployment instructions
-- Demo video: add a 2–5 minute walkthrough of the app features
